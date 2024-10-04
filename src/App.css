@@ -1,38 +1,222 @@
-.App {
-  text-align: center;
+/* Global reset for margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Header container */
+header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px 10vw;
+  border-bottom: 1px solid #ddd;
+  background-color: #f8f8f8;
 }
 
-.App-link {
-  color: #61dafb;
+/* Logo styling */
+header img {
+  height: 50px;
+  margin-right: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
 }
+
+/* Navbar list */
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Navbar links */
+.navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+/* Change the link color on hover */
+.navbar ul li a:hover {
+  color: rgb(117, 115, 115);
+}
+
+
+/*------------------Main section------------------------------*/
+.Main button{
+  background-color: #F4CE14; 
+  border-radius: 10pt;
+  height: 7vh;
+  width: 20vw;
+  font-style:inherit;
+  border: #F4CE14;
+  }
+
+.aboutSection{
+  background-color: #495E57;
+  display: flex;
+  max-height: 40vh;
+    padding: 0vh 10vw 0 10vw;
+}
+.aboutSection button{
+ margin-top: 5px;
+
+}
+.aboutSection h2,h3{
+  font-size: 16pt;
+
+}
+.aboutSection h2{
+  color: #F4CE14;
+}
+.aboutSection h3 ,p{
+  color:#f6fffc
+}
+.sec1{
+  float: left;
+  width:70vw;
+  line-height: 1.5;
+}
+.sec2{
+  float: right;
+  width:auto;
+  padding-top: 7vh;
+  padding-left: 10vw;
+  
+}
+.sec2 img{
+  float: right;
+  width: 30vw;
+  height: 40vh;
+  border-radius: 16px;
+}
+
+.banner{
+  padding: 0vh 10vw 0 10vw;
+}
+.mainHeader{
+  display: flex;
+  padding-top: 10vh;
+}
+.mainHeader h2{
+  float: left;
+  width: 70%;
+}
+
+.mainHeader button{
+float: right;
+}
+
+
+/*--------------------------------------------------------------------*/
+
+.container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 10px;
+padding-top: 2ch;
+}
+
+.dish {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 25vw;
+background-color: rgb(221, 221, 221);
+border-radius: 16px;
+overflow: hidden;
+padding-bottom: 10px; /* Ensure some space at the bottom */
+}
+
+.dish img {
+width: 100%;
+height: 40vh;
+object-fit: cover;
+border-radius: 16px 16px 0 0;
+}
+
+.dishTitle {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1ch 2ch;
+}
+
+.dishName, .pricetag {
+margin: 0;
+}
+
+.pricetag {
+color: red;
+}
+
+.desc {
+padding: 1ch 2ch;
+max-width: 65ch;
+flex-grow: 1; 
+}
+
+.bottom-text {
+text-align: center;
+padding: 10px;
+display: flex;
+align-items: center;
+}
+.bottom-text a{
+text-decoration: none;
+color: black;
+}
+
+.bottom-text img{
+height: 2ch;
+width: 3ch;
+padding-left: 3ch;
+}
+
+/* -----------Footer---------------*/
+Footer {
+  background-color: #3a4429; 
+  color: #fff;
+  padding: 0vh 10vw 0 10vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+Footer p {
+  margin: 0;
+}
+
+Footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+Footer li {
+  display: inline;
+}
+
+Footer li a {
+  color: #ffcc00; /* Accent color */
+  text-decoration: none;
+}
+
+Footer a:hover {
+  text-decoration: underline;
+}
+
+
