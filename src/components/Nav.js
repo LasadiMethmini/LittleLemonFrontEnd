@@ -5,22 +5,22 @@ function Nav() {
     <nav className="navbar">
       <ul>
         <li>
-          <a href="index.html">Home</a>
+          <a href='/'>Home</a>
         </li>
         <li>
-          <a href="inded.html">About</a>
+          <a href="/">About</a>
         </li>
         <li>
-          <a href="index.html">Menu</a>
+          <a href="/">Menu</a>
         </li>
         <li>
-          <a href="index.html">Reservations</a>
+          <a href="/">Reservations</a>
         </li>
         <li>
-          <a href="index.html">Order Online</a>
+          <a href="/">Order Online</a>
         </li>
         <li>
-          <a href="index.html">Login</a>
+          <a href="/">Login</a>
         </li>
       </ul>
     </nav>
